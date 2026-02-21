@@ -1,0 +1,25 @@
+2026-02-21 16:29:29,229 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-29-29
+2026-02-21 16:29:40,045 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-29-40
+2026-02-21 16:29:40,706 - ERROR - Backup failed: [Errno 17] File exists: '/home/alena/third_sem/daemon/backups/2026-02-21_16-29-40'
+2026-02-21 16:30:29,233 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-30-29
+2026-02-21 16:30:40,047 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-30-40
+2026-02-21 16:30:40,706 - ERROR - Backup failed: [Errno 17] File exists: '/home/alena/third_sem/daemon/backups/2026-02-21_16-30-40'
+2026-02-21 16:31:29,237 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-31-29
+2026-02-21 16:31:40,048 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-31-40
+2026-02-21 16:31:40,706 - ERROR - Backup failed: [Errno 17] File exists: '/home/alena/third_sem/daemon/backups/2026-02-21_16-31-40'
+2026-02-21 16:32:29,238 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-32-29
+2026-02-21 16:32:40,050 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-32-40
+2026-02-21 16:32:40,707 - ERROR - Backup failed: [Errno 17] File exists: '/home/alena/third_sem/daemon/backups/2026-02-21_16-32-40'
+2026-02-21 16:33:29,239 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-33-29
+2026-02-21 16:33:40,051 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-33-40
+2026-02-21 16:33:40,707 - ERROR - Backup failed: [Errno 17] File exists: '/home/alena/third_sem/daemon/backups/2026-02-21_16-33-40'
+2026-02-21 16:34:29,242 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-34-29
+2026-02-21 16:34:40,052 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-34-40
+2026-02-21 16:34:40,707 - ERROR - Backup failed: [Errno 17] File exists: '/home/alena/third_sem/daemon/backups/2026-02-21_16-34-40'
+2026-02-21 16:35:29,248 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-35-29
+2026-02-21 16:35:40,053 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-35-40
+2026-02-21 16:35:40,708 - ERROR - Backup failed: [Errno 17] File exists: '/home/alena/third_sem/daemon/backups/2026-02-21_16-35-40'
+2026-02-21 16:36:29,249 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-36-29
+2026-02-21 16:36:40,056 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-36-40
+2026-02-21 16:36:40,709 - ERROR - Backup failed: [Errno 17] File exists: '/home/alena/third_sem/daemon/backups/2026-02-21_16-36-40'
+2026-02-21 16:37:02,052 - INFO - Daemon started.

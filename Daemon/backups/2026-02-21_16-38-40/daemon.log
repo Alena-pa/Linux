@@ -1,0 +1,5 @@
+2026-02-21 16:37:06,147 - INFO - Daemon stopped.
+2026-02-21 16:37:29,250 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-37-29
+2026-02-21 16:37:40,057 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-37-40
+2026-02-21 16:37:40,709 - ERROR - Backup failed: [Errno 17] File exists: '/home/alena/third_sem/daemon/backups/2026-02-21_16-37-40'
+2026-02-21 16:38:29,251 - INFO - Backup created: /home/alena/third_sem/daemon/backups/2026-02-21_16-38-29
