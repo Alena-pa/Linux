@@ -13,7 +13,7 @@ import subprocess
 CONFIG_PATH = "config.json"
 
 
-# ================= CONFIG =================
+#CONFIG
 
 def load_config():
     if not os.path.exists(CONFIG_PATH):
@@ -44,7 +44,7 @@ def setup_logging(log_file):
     )
 
 
-# ================= DAEMON =================
+#DAEMON
 
 def daemonize():
     if os.fork() > 0:
@@ -149,7 +149,7 @@ def clear_logs():
     # Очистить окно
     log_box.delete(1.0, tk.END)
 
-# ================= GUI =================
+#GUI
 
 def start_daemon():
     subprocess.Popen(["python3", __file__, "start"])
@@ -254,7 +254,7 @@ def run_gui():
     root.mainloop()
 
 
-# ================= ENTRY =================
+#ENTRY
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:

@@ -13,7 +13,7 @@ from config import SENSITIVE_PATHS, SENSITIVE_PORTS
 from event_log import log_event, make_event
 
 
-# ── Process monitor ───────────────────────────
+#Process monitor
 class ProcessMonitor(threading.Thread):
     def __init__(self):
         super().__init__(daemon=True, name="ProcMon")
@@ -48,7 +48,7 @@ class ProcessMonitor(threading.Thread):
             self._known = {pid: name for pid, (name, _) in current.items()}
 
 
-# ── File monitor ──────────────────────────────
+#File monitor
 class FileMonitor(threading.Thread):
     def __init__(self, paths):
         super().__init__(daemon=True, name="FileMon")
@@ -85,7 +85,7 @@ class FileMonitor(threading.Thread):
                 pass
 
 
-# ── Network monitor ───────────────────────────
+#Network monitor
 class NetworkMonitor(threading.Thread):
     def __init__(self):
         super().__init__(daemon=True, name="NetMon")
@@ -125,7 +125,7 @@ class NetworkMonitor(threading.Thread):
         return result
 
 
-# ── Engine (starts/stops all monitors) ───────
+#Engine (starts/stops all monitors)
 class AuditEngine:
     def __init__(self, watch_paths=None):
         self.watch_paths = watch_paths or ["/etc", str(Path.home())]

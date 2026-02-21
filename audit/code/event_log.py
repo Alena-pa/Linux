@@ -9,7 +9,7 @@ _log_lock  = threading.Lock()
 _listeners = []   # callables notified on every new event
 
 
-# ── Event factory ─────────────────────────────
+#Event factory
 def make_event(etype, message, severity="INFO", user="", pid=0, process="", path=""):
     return {
         "ts":       datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -23,7 +23,7 @@ def make_event(etype, message, severity="INFO", user="", pid=0, process="", path
     }
 
 
-# ── Write ─────────────────────────────────────
+#Write
 def log_event(ev: dict):
     with _log_lock:
         # Rotate at 5 MB
@@ -38,7 +38,7 @@ def log_event(ev: dict):
             pass
 
 
-# ── Read ──────────────────────────────────────
+#Read
 def read_events(limit=10_000):
     events = []
     for path in [LOG_FILE.with_suffix(".jsonl.1"), LOG_FILE]:
@@ -57,7 +57,7 @@ def read_events(limit=10_000):
     return events[-limit:]
 
 
-# ── Listener bus ──────────────────────────────
+#Listener bus
 def add_listener(cb):    _listeners.append(cb)
 def remove_listener(cb):
     if cb in _listeners: _listeners.remove(cb)

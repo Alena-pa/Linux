@@ -56,7 +56,6 @@ def block_ip(ip):
 
 #DETECTION
 
-# Новая версия detect_threat с дополнительными проверками
 WINDOW_SECONDS = 5  # окно времени для портов и повторов
 ports_seen = defaultdict(dict)  # src_ip -> {port: timestamp}
 times_seen = defaultdict(list)  # src_ip -> [timestamps]
@@ -69,7 +68,6 @@ def detect_threat(packet):
     packet_size = len(packet)
     now = time.time()
 
-    # --- Существующие проверки ---
     packet_count[ip] += 1
 
     if packet_size > MAX_PACKET_SIZE:
@@ -87,13 +85,11 @@ def detect_threat(packet):
                 log_event(f"SYN flood suspected from {ip}")
                 return "BLOCK"
 
-    # --- Новые проверки ---
 
     # 1. Port scan
     if packet.haslayer(TCP) or packet.haslayer(UDP):
         dport = packet[TCP].dport if packet.haslayer(TCP) else packet[UDP].dport
         ports_seen[ip][dport] = now
-        # оставляем только порты за последние WINDOW_SECONDS
         ports_seen[ip] = {p: t for p, t in ports_seen[ip].items() if now - t <= WINDOW_SECONDS}
         PORT_THRESHOLD = 10  # порог портов для подозрения
         if len(ports_seen[ip]) >= PORT_THRESHOLD:
