@@ -1,0 +1,7 @@
+{
+    "source_dir": "/home/alena/third_sem/daemon/data",
+    "backup_dir": "/home/alena/third_sem/daemon/backups",
+    "log_file": "/home/alena/third_sem/daemon/data/daemon.log",
+    "pid_file": "/home/alena/third_sem/daemon/data/daemon.pid",
+    "interval_minutes": 1
+}
